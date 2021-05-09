@@ -294,6 +294,10 @@
     display: none;
 }
 
+#menu__active:checked~label #degree--up-0:checked~.menu__arrow--top .arrow {
+    transform: rotate(135deg);
+}
+
 #menu__active:checked~label #degree--up-0:checked~.menu__arrow--top label[for="degree--up-1"] {
     display: block;
 }
