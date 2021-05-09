@@ -1121,7 +1121,7 @@ div {
   gap: 15px;
 }
 
-.Gallery-section .Gallery-grid li {
+.Gallery-section .Gallery-grid a {
   -webkit-transition: all 0.75s ease-in-out;
   transition: all 0.75s ease-in-out;
 }
@@ -1132,14 +1132,14 @@ div {
   transition: all 0.75s ease-in-out;
 }
 
-.Gallery-section .Gallery-grid li:nth-child(odd):hover {
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
-}
-
-.Gallery-section .Gallery-grid li:nth-child(even):hover {
+.Gallery-section .Gallery-grid a:nth-child(odd):hover {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
+}
+
+.Gallery-section .Gallery-grid a:nth-child(even):hover {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 .Gallery-section .Gallery-section-title {
@@ -1276,9 +1276,37 @@ div {
 body {
   background-color: #ffae8c;
   overflow-x: hidden;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-10deg);
+            transform: rotateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-10deg);
+            transform: rotateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
 }
 /*# sourceMappingURL=App.css.map */

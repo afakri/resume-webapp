@@ -8,18 +8,18 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         list-style: none;
         gap: 15px;
-        li {
+        a {
             transition: all 0.75s ease-in-out;
         }
         li:hover {
             color: aqua;
             transition: all 0.75s ease-in-out;
         }
-        li:nth-child(odd):hover {
-            transform: rotate(-3deg);
-        }
-        li:nth-child(even):hover {
+        a:nth-child(odd):hover {
             transform: rotate(3deg);
+        }
+        a:nth-child(even):hover {
+            transform: rotate(-3deg);
         }
     }
     .Gallery-section-title {
