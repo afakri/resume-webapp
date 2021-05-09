@@ -1,0 +1,39 @@
+.project-content {
+    width: fit-content;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    margin: 25px 0px 10px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.project-title {
+    margin-bottom: 20px;
+    a {
+        color: white;
+        font-size: clamp(24px, 5vw, 28px);
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+.project-overline {
+    color: #114e60;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+div {
+    display: block;
+}
+
+.project-description {
+    p {
+        color: white;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

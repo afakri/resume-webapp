@@ -1,0 +1,118 @@
+#myprojects {
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.projects-list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0 10%;
+    .project-element:nth-child(even) {
+        grid-column: 7 / -1;
+        text-align: right;
+        .tech-stack {
+            justify-content: flex-end;
+            li {
+                margin: 0px 0px 5px 20px
+            }
+        }
+        .project-description p {
+            padding: 25px 25px 25px 0px;
+            z-index: 2;
+        }
+        p {
+            text-align: right;
+        }
+        .project-content {
+            grid-column: 6 / -1;
+        }
+        .image {
+            grid-column: 1 / 8;
+        }
+    }
+    .project-element:nth-child(odd) {
+        .project-description p {
+            padding: 25px 0px 25px 25px;
+        }
+        p {
+            text-align: left;
+        }
+        .project-content {
+            grid-column: 1 / 8;
+        }
+        .tech-stack {
+            li {
+                margin: 0px 20px 5px 0px
+            }
+        }
+        .image {
+            grid-column: -1 / 7;
+        }
+    }
+    .project-description {
+        background-color: #114e60;
+        border-radius: 5px;
+        box-shadow: 0 10px 30px -15px;
+    }
+    .image {
+        width: fit-content;
+        grid-area: -1 / 6 / -1 / -1;
+        position: relative;
+        z-index: 0;
+        img {
+            align-items: end;
+            max-width: 100%;
+        }
+    }
+    .project-element {
+        position: relative;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        .project-content {
+            position: relative;
+            grid-area: 1 / 1 / -1 / 7;
+            z-index: 1;
+        }
+        .image {
+            box-shadow: 0 10px 30px -15px;
+        }
+    }
+}
+
+.section-title {
+    margin: 10px 0 40px;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: white;
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+    }
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.section-title::before {
+    position: relative;
+    bottom: 4px;
+    content: "02" ".";
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 40px;
+    font-weight: 400;
+}

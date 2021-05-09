@@ -1,8 +1,23 @@
 @import './styles/NavBar';
 @import './styles/Console';
-@import './styles/VerticalLinks';
+@import './styles/NavBar';
+@import './styles/Projects';
+@import './styles/ProjectSections';
+@import './styles/About';
+@import './styles/Gallery';
+@import './styles/GalleryItem';
+@import './styles/Footer';
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #ffae8c;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }

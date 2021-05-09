@@ -1,5 +1,5 @@
 import React from 'react'
-import * as AiIcons from 'react-icons/ai'
+
 
 
 
@@ -8,20 +8,20 @@ export const SideBarData = [
     {
         title:"Home",
         path:"/",
-        icon:<i  class="fas fa-home"></i>,
-        cName:"nav-text"
+        icon:<i  className="fas fa-home"></i>,
+        
     },
     {
         title:"Projects",
         path:"/",
-        icon:<i  class="fas fa-tasks"></i>,
-        cName:"nav-text"
+        icon:<i  className="fas fa-tasks"></i>,
+        
     },
     {
         title:"Contact",
         path:"/",
-        icon:<i  class="fas fa-id-card"></i>,
-        cName:"nav-text"
+        icon:<i  className="fas fa-id-card"></i>,
+        
     },
     
     

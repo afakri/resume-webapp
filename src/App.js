@@ -1,26 +1,27 @@
-import "./App.css"
+import "./App.css";
 import Console from "./components/Console";
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import VerticalLinks from "./components/VerticalLinks";
+import ProjectSections from "./components/ProjectSections";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
 
 function App() {
-
   return (
     <>
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route path='/'/>
-        </Switch>
-      </Router>
-     
+      <About />
+
+      <NavBar />
+
       <Console />
-      
-      
-      <VerticalLinks/>
+
+      <ProjectSections />
+      <Gallery />
+      <div className="footer">
+        <p>Built {"&"} Designed by Ayman Fakri</p>
+        <p>React.js</p>
+      </div>
     </>
   );
-};
+}
 
 export default App;
