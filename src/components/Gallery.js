@@ -16,8 +16,9 @@ function Gallery() {
               target="blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "black" }}
+              key={index} 
             >
-              <li className="Items-boxs" key={index}>
+              <li className="Items-boxs" >
                 <GalleryItem
                   title={data.title}
                   description={data.description}

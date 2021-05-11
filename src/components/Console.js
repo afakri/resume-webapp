@@ -9,7 +9,7 @@ function Console() {
       <div className="console">
         <div className="header"></div>
         <div className="consolebody">
-          <p className="consoleText">
+          <div className="consoleText">
             {"> "}Ayman.origin
             <p className="consoleResponse">
               &nbsp;&nbsp;&nbsp;={">"} "Kenitra, Morocco"{" "}
@@ -60,7 +60,7 @@ function Console() {
                 <span>"theonlyayman@outlook.fr"</span>
               </a>
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </section>
