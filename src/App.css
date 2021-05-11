@@ -1136,6 +1136,10 @@ div {
   transition: all 0.75s ease-in-out;
 }
 
+.Gallery-section .Gallery-grid .Items-boxs {
+  height: 100%;
+}
+
 .Gallery-section .Gallery-grid li:hover {
   color: aqua;
   -webkit-transition: all 0.75s ease-in-out;
@@ -1214,6 +1218,7 @@ div {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 1.75rem;
+  text-align: center;
 }
 
 .Item-container i {
