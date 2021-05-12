@@ -5,22 +5,21 @@ import Android from "../assets/android.png";
 import Leaderboard from "../assets/leaderboard.png";
 import Plagia from "../assets/plagia.png";
 
-
-
-
 function ProjectSections() {
-  const images=[Android,Leaderboard,Plagia]
+  const images = [Android, Leaderboard, Plagia];
   return (
     <div id="myprojects">
       <ul className="section-title">
-        <p>
-          Some Stuff I've Built
-        </p>
+        <p>Some Stuff I've Built</p>
       </ul>
       <ul className="projects-list">
-        {ProjectData.map((item,index) => {
+        {ProjectData.map((item, index) => {
           return (
-            <li className="project-element" key={index} style={{marginBottom:"100px"}}>
+            <li
+              className="project-element"
+              key={index}
+              style={{ marginBottom: "100px" }}
+            >
               <Project
                 title={item.title}
                 description={item.description}
@@ -28,12 +27,10 @@ function ProjectSections() {
                 stack={item.stack}
               />
               <div className="image">
-              <img src={images[index]} alt="project image" />
+                <a href={item.link}>
+                  <img src={images[index]} alt="project image" />
+                </a>
               </div>
-              
-              
-                
-              
             </li>
           );
         })}

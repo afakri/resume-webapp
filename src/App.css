@@ -988,6 +988,13 @@ div {
 .projects-list .project-element .image {
   -webkit-box-shadow: 0 10px 30px -15px;
           box-shadow: 0 10px 30px -15px;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.projects-list .project-element .image:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .section-title {

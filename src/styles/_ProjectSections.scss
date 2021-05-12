@@ -78,6 +78,10 @@
         }
         .image {
             box-shadow: 0 10px 30px -15px;
+            transition: all 0.75s ease-in-out
+        }
+        .image:hover {
+            transform: translateY(-10px);
         }
     }
 }
