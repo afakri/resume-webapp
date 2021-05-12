@@ -32,9 +32,9 @@ function Console() {
               &nbsp;&nbsp;&nbsp;={">"} ["Web Dev", "Mobile Dev", "Blockchain",
               "Crypography", "AI","Data Science"]
             </p>
-            {"> "}Ayman.workExperience.latest{" "}
+            {"> "}Ayman.workExperience{" "}
             <p className="consoleResponse">
-              &nbsp;&nbsp;&nbsp;={">"} Latest Work Experience
+              &nbsp;&nbsp;&nbsp;={">"} Work Experience:
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company:
               "AEPONYX" role: "Software engineering Intern"
@@ -44,10 +44,30 @@ function Console() {
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endDate:
               "July 2020"
+              <br />
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company:
+              "University of Ottawa" role: "Teaching Assistant:SEG2105"
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startDate:
+              "May 2021"
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endDate:
+              "Current"
             </p>
             {"> "}Ayman.resume{" "}
             <p className="consoleResponse">
-              &nbsp;&nbsp;&nbsp;={">"} <a href="AymanResume.pdf" id="email" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> <span>"AymanResume.pdf"</span> </a> 
+              &nbsp;&nbsp;&nbsp;={">"}{" "}
+              <a
+                href="AymanResume.pdf"
+                id="email"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                {" "}
+                <span>"AymanResume.pdf"</span>{" "}
+              </a>
             </p>
             {"> "}Ayman.email
             <p className="consoleResponse">
