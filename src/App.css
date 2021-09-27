@@ -7,9 +7,9 @@
 }
 
 .hamburger {
-  content: ' ';
+  content: " ";
   position: relative;
-  width: 20px;
+  width: 30px;
   border: 2px solid #114e60;
   border-radius: 5px;
   -webkit-transition: all 0.333333333333333s ease;
@@ -18,7 +18,7 @@
 
 .hamburger:after,
 .hamburger:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 50%;
   width: 100%;
@@ -62,10 +62,10 @@
 .menu__toggle {
   z-index: 11;
   position: absolute;
-  top: -100px;
-  left: -100px;
-  width: 200px;
-  height: 200px;
+  top: -80px;
+  left: -80px;
+  width: 150px;
+  height: 150px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: -webkit-transform 1.3s;
@@ -375,14 +375,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .console .header {
-  width: 50%;
+  width: 90%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-color: #f4eee8;
@@ -393,19 +393,20 @@
 }
 
 .console .consolebody {
-  font-family: 'Ubuntu Mono', monospace;
-  width: 50%;
+  font-family: "Ubuntu Mono", monospace;
+  width: 90%;
   height: 40%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 30px;
+  padding: 30px 0 0 10px;
   background-color: #383737;
 }
 
 .console .consolebody p {
   line-height: 1.5rem;
+  font-size: 15px;
 }
 
 .console .consolebody .consoleText {
@@ -415,6 +416,7 @@
 .console .consolebody .consoleResponse {
   margin-bottom: 20px;
   color: #598a99;
+  text-align: left;
 }
 
 .console .consolebody .consoleResponse a span:hover {
@@ -446,15 +448,15 @@
 }
 
 .console-title p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 .console-title::after {
   content: "";
   display: block;
   height: 1px;
-  width: 200px;
+  width: 60px;
   margin-left: 20px;
   background-color: #ffffff;
 }
@@ -465,9 +467,116 @@
   content: "01" ".";
   margin-right: 10px;
   color: #ffffff;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 40px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
   font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  .console-section {
+    padding-top: 1%;
+    min-height: 100vh;
+    width: 100%;
+    top: 0px;
+    margin-bottom: 100px;
+  }
+  .console {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Fira Mono";
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .console .header {
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #f4eee8;
+    height: 20px;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+  }
+  .console .consolebody {
+    font-family: "Ubuntu Mono", monospace;
+    width: 50%;
+    height: 40%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
+    background-color: #383737;
+  }
+  .console .consolebody p {
+    line-height: 1.5rem;
+  }
+  .console .consolebody .consoleText {
+    color: white;
+  }
+  .console .consolebody .consoleResponse {
+    margin-bottom: 20px;
+    color: #598a99;
+  }
+  .console .consolebody .consoleResponse a span:hover {
+    text-decoration: underline;
+  }
+  .console .consolebody #email {
+    color: #ffae8c;
+  }
+  .console-title {
+    margin: 0 0 50px;
+    padding: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+  }
+  .console-title p {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+  .console-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: #ffffff;
+  }
+  .console-title::before {
+    position: relative;
+    bottom: 4px;
+    content: "01" ".";
+    margin-right: 10px;
+    color: #ffffff;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
 .icon {
@@ -479,9 +588,9 @@
 }
 
 .hamburger {
-  content: ' ';
+  content: " ";
   position: relative;
-  width: 20px;
+  width: 30px;
   border: 2px solid #114e60;
   border-radius: 5px;
   -webkit-transition: all 0.333333333333333s ease;
@@ -490,7 +599,7 @@
 
 .hamburger:after,
 .hamburger:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 50%;
   width: 100%;
@@ -534,10 +643,10 @@
 .menu__toggle {
   z-index: 11;
   position: absolute;
-  top: -100px;
-  left: -100px;
-  width: 200px;
-  height: 200px;
+  top: -80px;
+  left: -80px;
+  width: 150px;
+  height: 150px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: -webkit-transform 1.3s;
@@ -883,7 +992,11 @@ div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 10%;
+  padding: 0 5%;
+}
+
+.projects-list .project-description p {
+  font-size: 15px;
 }
 
 .projects-list .project-element:nth-child(even) {
@@ -999,7 +1112,7 @@ div {
 
 .section-title {
   margin: 10px 0 40px;
-  padding: 0 10%;
+  padding: 0 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,15 +1131,15 @@ div {
 }
 
 .section-title p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 .section-title::after {
   content: "";
   display: block;
   height: 1px;
-  width: 200px;
+  width: 70px;
   margin-left: 20px;
   background-color: white;
 }
@@ -1037,9 +1150,160 @@ div {
   content: "02" ".";
   margin-right: 10px;
   color: white;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 40px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
   font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  #myprojects {
+    padding-top: 30px;
+    margin-bottom: 100px;
+  }
+  .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10%;
+  }
+  .projects-list .project-element:nth-child(even) {
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+  .projects-list .project-element:nth-child(even) .tech-stack {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .projects-list .project-element:nth-child(even) .tech-stack li {
+    margin: 0px 0px 5px 20px;
+  }
+  .projects-list .project-element:nth-child(even) .project-description p {
+    padding: 25px 25px 25px 0px;
+    z-index: 2;
+  }
+  .projects-list .project-element:nth-child(even) p {
+    text-align: right;
+  }
+  .projects-list .project-element:nth-child(even) .project-content {
+    grid-column: 6 / -1;
+  }
+  .projects-list .project-element:nth-child(even) .image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / 8;
+  }
+  .projects-list .project-element:nth-child(odd) .project-description p {
+    padding: 25px 0px 25px 25px;
+  }
+  .projects-list .project-element:nth-child(odd) p {
+    text-align: left;
+  }
+  .projects-list .project-element:nth-child(odd) .project-content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / 8;
+  }
+  .projects-list .project-element:nth-child(odd) .tech-stack li {
+    margin: 0px 20px 5px 0px;
+  }
+  .projects-list .project-element:nth-child(odd) .image {
+    grid-column: -1 / 7;
+  }
+  .projects-list .project-description {
+    background-color: #114e60;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 30px -15px;
+            box-shadow: 0 10px 30px -15px;
+  }
+  .projects-list .image {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    grid-area: -1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 0;
+  }
+  .projects-list .image img {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    max-width: 100%;
+  }
+  .projects-list .project-element {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects-list .project-element .project-content {
+    position: relative;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: 1 / 1 / -1 / 7;
+    z-index: 1;
+  }
+  .projects-list .project-element .image {
+    -webkit-box-shadow: 0 10px 30px -15px;
+            box-shadow: 0 10px 30px -15px;
+    -webkit-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+  }
+  .projects-list .project-element .image:hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .section-title {
+    margin: 10px 0 40px;
+    padding: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    color: white;
+  }
+  .section-title p {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: white;
+  }
+  .section-title::before {
+    position: relative;
+    bottom: 4px;
+    content: "02" ".";
+    margin-right: 10px;
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 40px;
+    font-weight: 400;
+  }
 }
 
 .About-section {
@@ -1057,27 +1321,27 @@ div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 15%;
+  padding: 0 5%;
 }
 
 .About-section .small-header {
   font-size: 20px;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 .About-section .Name {
-  font-size: 80px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 5px;
   color: #ffffff;
-  line-height: 100px;
+  line-height: 50px;
 }
 
 .About-section .below-name {
   color: #114e60;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   letter-spacing: 0px;
-  font-size: 60px;
+  font-size: 20px;
   text-align: right;
 }
 
@@ -1096,11 +1360,11 @@ div {
 }
 
 .About-section .about-info {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   margin-top: 10px;
   max-width: 600px;
-  text-align: right;
+  text-align: center;
 }
 
 .About-section .about-info-container {
@@ -1115,6 +1379,30 @@ div {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (min-width: 800px) {
+  .About-section {
+    padding: 0 15%;
+  }
+  .About-section .small-header {
+    font-size: 20px;
+  }
+  .About-section .Name {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .About-section .below-name {
+    margin-bottom: 60px;
+    font-size: 60px;
+    text-align: right;
+  }
+  .About-section .about-info {
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 600px;
+    text-align: right;
+  }
 }
 
 .Gallery-section {
