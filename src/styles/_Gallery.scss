@@ -5,7 +5,7 @@
     margin-bottom: 10%;
     .Gallery-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         list-style: none;
         gap: 15px;
         a {
@@ -35,7 +35,7 @@
         list-style: none;
         color: #f4eee8;
         p {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 30px;
         }
     }
@@ -53,7 +53,7 @@
         content: "03" ".";
         margin-right: 10px;
         color: #f4eee8;
-        font-family: 'Ubuntu Mono', monospace;
+        font-family: "Ubuntu Mono", monospace;
         font-size: 40px;
         font-weight: 400;
     }
